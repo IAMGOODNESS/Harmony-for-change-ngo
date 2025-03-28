@@ -1,0 +1,86 @@
+/* Container for the entire slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    height: 400px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  /* Wrapper for image and text */
+  .slider-content {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Image styling */
+  .slider-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Text below the image */
+  .slider-text {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Arrows (left and right navigation) */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    padding: 10px;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  /* Positioning arrows */
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  
+  /* Hover effect on arrows */
+  .arrow:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .slider-container {
+      width: 90%;
+      height: 350px;
+    }
+    
+    .slider-text {
+      font-size: 16px;
+    }
+    
+    .arrow {
+      font-size: 30px;
+    }
+  }
+  

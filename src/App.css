@@ -1,0 +1,239 @@
+
+.nav-container{
+  background-color: greenyellow;
+  width: 5000px;
+  height: 13vh;
+  bottom: 300px;
+  position: relative;
+ 
+}
+body{
+  overflow-x: hidden;
+  position: relative;
+  top: 300px;
+ 
+  
+}
+.nav-container2{
+  background-color: white;
+  width: 5000px;
+  height: 4vh;
+  bottom: 300px;
+  position: relative;
+ 
+}
+.nav-text span{
+padding: 16px;
+position: relative;
+bottom: 182px;
+font-size:17px;
+ left: 500px;
+font-weight: bold;
+}
+.bg{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("pexels-illustrate-digital-ug-924569584-28101466.jpg");
+width: 100vw;
+background-size: cover;
+height: 100vh;
+position: relative;
+bottom: 250px;
+}
+.motto{
+  color: white;
+  position: relative;
+  font-family: cursive;
+  left: 220px;
+  top: 150px;
+}
+.btn1,.btn2{
+  
+  position: relative;
+  top: 180px;
+  left: 500px;
+}
+.btn1{
+background-color: greenyellow;
+}
+.btn2{
+  background-color: white;
+  left: 580px;
+}
+.nav-text{
+  position: relative;
+  bottom: 10px;
+}
+html{
+  height: 600vh;
+}
+marquee {
+position: relative;
+top: 20px;
+  width: 100%;
+font-weight: 300;
+  color: black;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+.card1{
+  padding: 40px;
+  background-color: yellowgreen;
+  width: 280px;
+  height: 45vh;
+  border-radius: 5px;
+}
+.card2{
+  padding: 40px;
+  background-color: #00A851;
+  width: 280px;
+  height: 45vh;
+  border-radius: 5px;
+}
+.card3{
+  background: linear-gradient(rgba(255,255,0,0.5),rgba(0,128,0,0.5)),url("\pexels-binabdullah-photos-470445651-31223333.jpg");
+  width: 280px;
+  padding: 40px;
+  background-size: cover;
+  height: 45vh;
+ 
+}
+hr{
+ background-image: linear-gradient(#34CD32,#34C759);
+ height: 2px;
+ border: none;
+ position: relative;
+ top: 110px;
+ width: 200px;
+right: 2253px;
+}
+.carddisplay{
+  display: flex;
+  position: relative;
+  top: 420px;
+  
+  left: 100px;
+}
+.carddisplay h2{
+ color: white;
+ position: relative;
+ bottom: 10px;
+}
+.carddisplay h4{
+  color: white;
+  
+  position: relative;
+  bottom: 10px;
+ }
+ /* Responsive Design */
+@media screen and (max-width: 1024px) {
+ 
+
+  .nav-container2 img {
+    height: 150px;
+    bottom: 0;
+  }
+
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-text span {
+    position: relative;
+    left: 0;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .btn1, .btn2 {
+    left: 0;
+    width: 80%;
+    margin: 5px auto;
+    font-size: 14px;
+  }
+
+  .motto {
+    left: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .carddisplay {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    left: 0;
+    top: 300px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .about h2 {
+    font-size: 24px;
+    left: 0;
+    text-align: center;
+  }
+
+  .about h4 {
+    font-size: 14px;
+    left: 0;
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+    right: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    font-size: 12px;
+    height: auto;
+  }
+
+  .nav-container2 img {
+    height: 100px;
+  }
+
+  .nav-text {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bg {
+    height: 80vh;
+  }
+
+  .motto {
+    font-size: 18px;
+  }
+
+  .btn1, .btn2 {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about h4 {
+    font-size: 13px;
+  }
+
+  .carddisplay {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card1, .card2, .card3 {
+    width: 95%;
+    padding: 20px;
+  }
+}
