@@ -146,24 +146,31 @@ right: 2253px;
   }
 
   .btn1, .btn2 {
-    left: 0;
-    width: 80%;
+    left: 80px;
+    top: 300px;
+   
+    width: 25%;
     margin: 5px auto;
     font-size: 14px;
   }
-
+.btn2{
+  left: 120px;
+}
   .motto {
     left: 0;
+    position: relative;
+    top: 250px;
     font-size: 20px;
     text-align: center;
   }
 
   .carddisplay {
+   
     flex-direction: column;
     align-items: center;
     gap: 20px;
     left: 0;
-    top: 300px;
+    top: 700px;
   }
 
   .card1, .card2, .card3 {
@@ -182,7 +189,13 @@ right: 2253px;
     left: 0;
     text-align: center;
   }
-
+  body{
+    overflow-x: hidden;
+  }
+#logo-nav{
+  position: relative;
+  top: 30px;
+}
   hr {
     width: 50%;
     right: 0;
@@ -233,7 +246,68 @@ right: 2253px;
   }
 
   .card1, .card2, .card3 {
-    width: 95%;
+    width: 85%;
     padding: 20px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+}
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+/* Mobile Navigation */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 200px;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu span {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-menu span:hover {
+  background-color: greenyellow;
+}
+
+/* Show menu when active */
+.nav-menu.active {
+  display: flex;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-text {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
