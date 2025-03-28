@@ -89,7 +89,7 @@ font-weight: 300;
   border-radius: 5px;
 }
 .card3{
-  background: linear-gradient(rgba(255,255,0,0.5),rgba(0,128,0,0.5)),url("public/pexels-binabdullah-photos-470445651-31223333.jpg");
+  background: linear-gradient(rgba(255,255,0,0.5),rgba(0,128,0,0.5)),url("/pexels-binabdullah-photos-470445651-31223333.jpg");
   width: 280px;
   padding: 40px;
   background-size: cover;
