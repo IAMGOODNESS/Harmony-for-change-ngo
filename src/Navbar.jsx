@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <div className='nav-container'>
         <marquee behavior="scroll" scrolldelay="50" direction="right">
-          Harmony For Change Would Launch On The 29th Of April, For more Info Contact: 
+          Harmony For Change Would Launch On The 29tkh Of April, For more Info Contact: 
           <a style={{ color: "black", fontWeight: "bolder" }} href="tel:+2349037677897">09037677897</a>
         </marquee>
       </div>
